@@ -9,5 +9,6 @@ In cryptography, a Caesar cipher, also known as Caesar’s cipher, the shift cip
 ### Sample Result
 
 ```ruby
-  encrypt("What a string!", 5)  #=> "Bmfy f xywnsl!" 
+  test = CaesarCipher.new
+  test.encrypt("What a string!", 5)  #=> "Bmfy f xywnsl!" 
 ```
