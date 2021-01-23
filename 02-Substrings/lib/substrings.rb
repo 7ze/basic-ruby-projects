@@ -10,6 +10,3 @@ def substrings(word, dictionary)
     a[v] += count_pattern(word, regex) if word.match?(regex)
   end
 end
-
-dictionary = %w[below down go going horn how howdy it i low own part partner sit]
-puts substrings(%(how how the fuck it it go), dictionary)
