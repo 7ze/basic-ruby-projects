@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-def stock_picker(stocks)
+def stock_picker(stock_prices)
   profit = {}
-  stocks.each_with_index do |price1, i|
-    stocks.each_with_index do |price2, j|
-      profit[[i, j]] = price2 - price1 if j > i
+  stock_prices.each_with_index do |buying_price, buying_date|
+    stock_prices.each_with_index do |selling_price, selling_date|
+      profit[[buying_date, selling_date]] = selling_price - buying_price if selling_date > buying_date
     end
   end
   max_profit = profit.max_by(&:last)
