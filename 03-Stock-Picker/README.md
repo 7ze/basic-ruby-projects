@@ -7,6 +7,5 @@ Implement a method #stock_picker that takes in an array of stock prices, one for
 For instance,
 ``` ruby
   stock_picker([17, 3, 6, 9, 15, 8, 6, 1, 10])
-  # would return [1,4]  
-  # for a profit of $15 - $3 == $12
+  # => [1,4]  for a profit of $15 - $3 == $12
   ```
